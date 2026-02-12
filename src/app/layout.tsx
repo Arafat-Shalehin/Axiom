@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/common/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,7 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark">
       <body className={`${inter.variable} ${orbitron.variable}`}>
-        {children}
+        <nav>
+          <Navbar />
+        </nav>
+        <main>{children}</main>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
