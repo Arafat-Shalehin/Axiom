@@ -30,13 +30,15 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark">
       <body className={`${inter.variable} ${orbitron.variable}`}>
-        <nav>
+        <div className="min-h-screen flex flex-col">
+          <nav>
           <Navbar />
         </nav>
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
         <footer>
           <Footer />
         </footer>
+        </div>
       </body>
     </html>
   );
