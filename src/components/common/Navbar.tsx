@@ -196,7 +196,7 @@ export default function Navbar() {
               U
             </span>
 
-            <span className="text-(--accent-primary)">User</span>
+            <span className="text-muted">User</span>
 
             <svg
               className={cx(
