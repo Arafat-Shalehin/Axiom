@@ -84,7 +84,7 @@ export default function Navbar() {
   }, [isMobileMenuOpen, isUserMenuOpen]);
 
   return (
-    <header className="m-3">
+    <header className="mt-1 md:mt-3 mx-3 border-none md:border-none">
       <nav
         ref={navRef}
         aria-label="Primary"
@@ -222,7 +222,7 @@ export default function Navbar() {
             className={cx(
               "absolute right-0 mt-2 w-48 origin-top-right",
               "rounded-md border border-(--border-color)",
-              "p-1 shadow-sm",
+              "p-1 shadow-sm z-10",
               "transition ease-out duration-200",
               isUserMenuOpen
                 ? "opacity-100 scale-100 translate-y-0"
